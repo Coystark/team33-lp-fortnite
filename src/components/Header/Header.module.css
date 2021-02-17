@@ -1,0 +1,44 @@
+
+.container {
+  height: 100vh;
+  width: 100%;
+}
+
+/* joker */
+
+.joker {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+@media only screen and (max-width: 800px) {
+  .joker {
+    display: none;
+  }
+}
+
+/* tournament */
+
+.tournament {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: flex-end;
+  margin: 0 20px 0 20px;
+}
+
+@media only screen and (min-width: 800px) {
+  .tournament {
+    margin-right: 200px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .tournament {
+    align-content: center;
+  }
+}
