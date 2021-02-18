@@ -8,10 +8,10 @@ const JustTesting = styled.div`
   height: 100vh;
   width: 100%;
   background-size: cover;
-  background-image: url("images/header/header-bg-character.png");
+  background-image: url("images/header/header-bg-character.jpg");
 
   @media(max-width: 1049px) {
-    background-image: url("images/header/header-bg-without-character.png");
+    background-image: url("images/header/header-bg-without-character.jpg");
   }
 `;
 
