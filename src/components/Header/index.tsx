@@ -1,22 +1,47 @@
 import React from 'react';
 import Image from 'next/image';
-import { useMediaQuery } from 'react-responsive';
 
+import styled from 'styled-components';
 import styles from './Header.module.css';
 
-const Header: React.FC = () => {
-  const switchBackground = useMediaQuery({ query: '(max-width: 800px)' });
+const JustTesting = styled.div`
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-image: url("images/header/Fundo-sem-personagem.png");
+`;
 
-  return (
-    <>
+const Joker = styled.div`
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("images/header/Personagem.png");
+
+  @media(max-width: 1049px) {
+    display: none;
+  }
+`;
+
+/*
+  background-image: url("images/header/Fundo.png");
+
+  @media(max-width: 768px) {
+    background-image: url("images/header/Fundo-sem-personagem.png");
+  }
+*/
+
+const Header: React.FC = () => (
+  <>
+    <JustTesting>
+
+      <Joker />
+
       <div
-        className={styles.container}
-        style={{ backgroundImage: switchBackground ? 'url("images/header/Fundo-sem-personagem.png")' : 'url("images/header/Fundo.png")' }}
+        className={styles.tournament}
       >
-
-        <div
-          className={styles.tournament}
-        >
+        <div className={styles.tournament__items}>
           <div className={styles.logo}>
             <Image src="/images/header/Logotipo.png" width="408" height="405" />
           </div>
@@ -29,13 +54,12 @@ const Header: React.FC = () => {
           <div className={styles.button}>
             <Image src="/images/header/botão-rosa.png" width="595" height="106" />
           </div>
-
         </div>
-
       </div>
 
-    </>
-  );
-};
+    </JustTesting>
+
+  </>
+);
 
 export default Header;
