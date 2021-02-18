@@ -17,7 +17,7 @@ export const Tournament = styled.div`
   flex-direction: column;
   align-items: flex-end;
   justify-content: center;
-  margin: 0 20px 0 20px;
+  padding: 0 20px 20px 20px;
   user-select: none;
 
   @media only screen and (min-width: 1049px) {
