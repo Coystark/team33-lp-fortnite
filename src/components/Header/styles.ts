@@ -58,4 +58,10 @@ export const TournamentTotalPrizePool = styled.div`
 export const TournamentSignUpNow = styled.a`
   margin-bottom: 20px;
 
+  &:hover {
+    filter: 
+      drop-shadow(1px 1px 0 white) 
+      drop-shadow(-1px -1px 0 white);
+  }
+
 `;
