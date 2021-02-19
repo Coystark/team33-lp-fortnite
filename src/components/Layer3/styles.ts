@@ -30,6 +30,7 @@ export const Grid = styled.div`
   flex-wrap: wrap;
   width: 1050px;
   justify-content: space-between;
+  user-select: none;
 
   @media(max-width: 1313px) {
     width: auto;
