@@ -4,11 +4,11 @@ export const Container = styled.div`
   width: 100%;
   background-size: cover;
   background-image: url("images/layer2/background.png");
-  padding: 80px 0 0 0;
+  padding: 80px 0 40px 0;
 `;
 
 export const Header = styled.div`
-  padding: 0 20px 0 20px;
+  padding: 0 20px 30px 20px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -29,11 +29,17 @@ export const Title = styled.div`
 `;
 
 export const Grid = styled.div`
-   display: flex;
-   justify-content: center;
+  user-select: none;
+  display: flex;
+  justify-content: center;
 
   @media(max-width: 1049px) {
     flex-direction: column;
     align-items: center;
   }
+`;
+
+export const Item = styled.div`
+  padding: 20px;
+  filter: drop-shadow(10px 15px 15px rgba(0, 0, 0, 0.3));
 `;

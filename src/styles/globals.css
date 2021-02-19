@@ -14,3 +14,8 @@ a {
 * {
   box-sizing: border-box;
 }
+
+@font-face {
+  font-family: 'Burbank';
+  src: url('/fonts/BurbankBigCondensed-Bold.otf');
+}
