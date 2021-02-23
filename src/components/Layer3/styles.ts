@@ -2,10 +2,10 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   width: 100%;
-  height: 100vh;
+  height: auto;
   background-size: cover;
   background-image: url("images/layer3/background.png");
-  padding: 80px 0 40px 0;
+  /*padding: 80px 0 40px 0;*/
 
   @media(max-width: 1313px) {
     height: auto;
@@ -16,10 +16,10 @@ export const Container = styled.div`
 export const Content = styled.div`
   display: flex;
   flex-direction: column;
-  padding-left: 130px;
+  padding: 80px 10px 150px 130px;
 
   @media(max-width: 1313px) {
-    padding-left: 0;
+    padding-left: 10px;
     align-items: center;
   }
 `;
@@ -48,6 +48,7 @@ export const Item = styled.div`
   @media(max-width: 1313px) {
     padding: 25px;
     width: auto;
+    
   }
 `;
 
@@ -56,8 +57,20 @@ export const Title = styled.div`
   font-family: 'Burbank';
   font-size: 51px;
   text-transform: uppercase;
+  text-align: center;
 
   @media(min-width: 1313px) {
     padding-left: 144px;
+    text-align: left;
+  }
+`;
+
+export const Explanation = styled.div`
+  display: flex;
+  padding-top: 20px;
+
+  @media(min-width: 1313px) {
+    padding-top: 60px;
+    padding-left: 60px;
   }
 `;

@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import {
-  Container, Grid, Item, Title, Content,
+  Container, Grid, Item, Title, Content, Explanation,
 } from './styles';
 
 /*
@@ -14,6 +14,9 @@ import {
 
 const Layer3:React.FC = () => (
   <Container>
+    <div style={{ display: 'flex', justifyContent: 'center' }}>
+      <Image draggable={false} src="/images/layer3/button-header.png" width="722px" height="104px" />
+    </div>
     <Content>
       <Title>HEADERS QUALIFIERS</Title>
       <Grid>
@@ -33,6 +36,10 @@ const Layer3:React.FC = () => (
           <Image draggable={false} src="/images/layer3/qualifears/5.png" width="345px" height="65px" />
         </Item>
       </Grid>
+
+      <Explanation>
+        <Image draggable={false} src="/images/layer3/button-message.png" width="522px" height="116px" />
+      </Explanation>
 
       <Title style={{ paddingTop: '70px' }}>TOURNAMENT</Title>
       <Grid>
