@@ -8,6 +8,10 @@ import {
   botão - 469 x 97
 */
 
+/*
+ TODO FIX: Background cortando no mobile
+*/
+
 const Layer4: React.FC = () => (
   <Container>
     <Content>

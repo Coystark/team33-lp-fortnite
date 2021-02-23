@@ -4,11 +4,11 @@ export const Container = styled.div`
   width: 100%;
   height: auto;
   background-size: cover;
+  background-position: right;
   background-image: url("images/layer3/background.png");
-  /*padding: 80px 0 40px 0;*/
 
   @media(max-width: 1313px) {
-    height: auto;
+    background-position: left;
   }
 
 `;
