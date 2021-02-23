@@ -18,7 +18,7 @@ const Layer3:React.FC = () => (
       <Image draggable={false} src="/images/layer3/button-header.png" width="722px" height="104px" />
     </div>
     <Content>
-      <Title>HEADERS QUALIFIERS</Title>
+      <Title>QUALIFIERS</Title>
       <Grid>
         <Item>
           <Image draggable={false} src="/images/layer3/qualifears/1.png" width="487px" height="128px" />
