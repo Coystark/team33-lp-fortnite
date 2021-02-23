@@ -5,6 +5,7 @@ import Layer2 from '../components/Layer2';
 import Layer3 from '../components/Layer3';
 import Layer4 from '../components/Layer4';
 import Layer5 from '../components/Layer5';
+import Layer6 from '../components/Layer6';
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <Layer3 />
       <Layer4 />
       <Layer5 />
+      <Layer6 />
     </>
   );
 }
